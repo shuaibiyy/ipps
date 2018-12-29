@@ -81,6 +81,8 @@ I implemented authentication for the application using [Auth0](https://auth0.com
 
 The application allows login and signup via a Google account or username and password.
 
+Note that the API does not provide a login endpoint. An API token can be retrieved by logging in via the UI and copying the `Bearer` token from an API request's `Authorization` header, which is visible in any developer console.
+
 # License
 
 MIT
