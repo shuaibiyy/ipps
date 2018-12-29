@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/uberjar/pd-api.jar clojure.main -m pd-api.core
