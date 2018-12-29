@@ -4,6 +4,10 @@ A simple app to view data on [prospective payment system providers](https://data
 
 The [UI](./pd-ui) is written using [React](https://reactjs.org/), [Redux](https://redux.js.org/) & [Ant Design](https://ant.design/); while the [API](./pd-api) is written in [Clojure](https://clojure.org/). Instructions for running the [UI](./pd-ui) and [API](./pd-api) can be found in their respective READMEs.
 
+## Screenshot
+
+![](./screenshot.png)
+
 ## API
 
 The API provides a single endpoint: `GET <hostname>/api/providers` that accepts the query parameters below.
@@ -66,6 +70,8 @@ Also available is a select box to restrict providers to a particular state.
 ### Field Exclusion
 
 The UI allows users to exclude provider fields of their choosing. I opted for allowing exclusion rather that requiring inclusion as the latter can get a bit tiresome pretty quickly. This, of course, is based on the assumption that the user finds the majority of fields useful.
+
+__Note on address field exclusion:__ address fields, i.e., provider street address, city, state, and zip code, are combined into a single field called __address__ on the UI. Therefore, excluding an address field translates into in an omission of only that field from the addresses displayed. For example, excluding zip code would result in addresses without zip codes.
 
 ### Sorting
 
