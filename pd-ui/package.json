@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "antd": "^3.11.4",
-    "auth0-lock": "^11.21.0",
+    "auth0-lock": "^11.26.0",
     "axios": "^0.18.1",
     "d3": "^3.5.17",
     "prop-types": "^15.5.10",
